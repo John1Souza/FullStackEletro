@@ -7,90 +7,72 @@
     <title>Produtos Full Stack Eletro</title>
     <link rel="stylesheet" href="./css/estilo.css">    
 </head>
-<body>
-    <table bgcolor="red" width="100%">
-        <table bgcolor="red" width="100%">
-            <tr>
-                <td align="left" width="25%">                    
-                    <a href="index.html">
-                        <font ><img width="100px" src="./imagens/Logotipo Moderno Tecnologia e Gaming Roxo.png" alt="Full Stack Eletro"></font>
-                    </a>
-                </td>
-                <td>
-                    <a href="produtos.html" target="_blank"><font>Nossos Produtos</font></a>
-                </td>
-                <td>
-                    <a href="loja.html"><font >Nossas Lojas</font></a>
-                </td>
-                <td>
-                    <a href="contato.html"><font >Contato</font></a>
-                </td>        
-            </tr>
-        </table>
-    <h2>Produtos</h2>
+<body>                                  
+    <nav id="menu">
+        <a href="index.html">
+            <font ><img width="100px" src="./imagens/Logotipo Moderno Tecnologia e Gaming Roxo.png" alt="Full Stack Eletro"></font>
+        </a>
+        <a href="produtos.html"><font>Nossos Produtos</font></a>
+        <a href="loja.html"><font >Nossas Lojas</font></a>
+        <a href="contato.html"><font >Contato</font></a>
+    </nav>       
+    <header>
+        <h1>Produtos</h1>
+    </header>
     <hr>
-    <table border="0" width="100%" cellpadding="">
-        <tr>
-            <td rowspan="5" width="20%" valign="top">
-                <h3><font >Categorias</font></h3>
-                <ul>
-                    <li><font>Geladeiras (3)</font></li>
-                    <li><font>Fogões (2)</font></li>
-                    <li><font>Microondas (3)</font></li>
-                    <li><font>Lavadoura de Roupas (2)</font></li>
-                    <li><font>Lava Louças (2)</font></li>
-                </ul>
-            </td>
-            <td width="20%" align="center" valign="bottom">
+    <section class="categorias">               
+        <h3>Categorias</h3>
+        <ul>
+            <li>Geladeiras (3)</li>
+            <li>Fogões (2)</li>
+            <li>Microondas (3)</li>
+            <li>Lavadoura de Roupas (2)</li>
+            <li>Lava Louças (2)</li>
+        </ul>
+    </section>
+    <section class="produtos">           
+            <div class="box_produto">
                 <img src="./imagens/geladeira.jpg" width="120px" alt="">
                 <br>
-                <font>Geladeira Fros Free Brastemp Side Inverse 540 litros</font><hr>
-                <font><strike>R$ 6.389,00</strike></font><br>
-                <font>R$ 5.019,00</font>
-            </td>
-            <td width="20%" align="center" valign="bottom">
+                <p class="descricao">Geladeira Fros Free Brastemp Side Inverse 540 litros</p><hr>
+                <p class="descricao"><strike>R$ 6.389,00</strike></p><br>
+                <p class="preco">R$ 5.019,00</p>
+            </div>
+            <div class="box_produto">
                 <img src="./imagens/microondas.jpg" width="120px" alt="">
                 <br>
-                <font>Mircroondas Brastemp</font><hr>
-                <font><strike>R$ 650,00</strike></font><br>
-                <font>R$ 399,99</font>
-            </td>
-            <td width="20%" align="center" valign="bottom">
+                <p class="descricao">Mircroondas Brastemp</p><hr>
+                <p class="descricao"><strike>R$ 650,00</strike></p><br>
+                <p class="preco">R$ 399,99</p>
+            </div>
+            <div class="box_produto">
                 <img src="./imagens/fogao.jpg" width="120px" alt="">
                 <br>
-                <font>Fogão Brastemp </font><hr>
-                <font><strike>R$ 1.200,00</strike></font><br>
-                <font>R$ 999,99</font>
-            </td>
-            <td width="20%" align="center" valign="bottom">
+                <p class="descricao">Fogão Brastemp </p><hr>
+                <p class="descricao"><strike>R$ 1.200,00</strike></p><br>
+                <p class="preco">R$ 999,99</p>
+            </div>
+            <div class="box_produto">
                 <img src="./imagens/lavaroupas.jpg" width="120px" alt="">
                 <br>
-                <font>Lava Roupas Brastemp</font><hr>
-                <font><strike>R$ 1.500,00</strike></font><br>
-                <font>R$ 1.199,99</font>
-            </td>
-            <td width="20%" align="center" valign="bottom">
+                <p class="descricao">Lava Roupas Brastemp</p><hr>
+                <p class="descricao"><strike>R$ 1.500,00</strike></p><br>
+                <p class="preco">R$ 1.199,99</p>
+            </div>
+            <div class="box_produto">
                 <img src="./imagens/lavalou.jpg" width="120px" alt="">
                 <br>
-                <font>Lava Louças Brastemp</font><hr>
-                <font><strike>R$ 2.500,00</strike></font><br>
-                <font>R$ 1.999,99</font>
-            </td>
-        </tr>
-
-    </table>   
-    <footer>        
-        <center>
-            <span>
-                <p id="formas_de_pagamento">
-                    <font>Formas de pagamento</font>
-                </p>
-                <img width="200px" src="./imagens/formas-pagamento.png" alt="Formas de pagamento">
-            </span>
-        </center>
-        <center>
-            <font >&copy; Recode Pro</font>
-        </center>        
+                <p class="descriçcao">Lava Louças Brastemp</p><hr>
+                <p class="descriçcao"><strike>R$ 2.500,00</strike></p><br>
+                <p class="preco">R$ 1.999,99</p>
+            </div>
+    </section>  
+    <footer class="rodape">
+        <p id="formas_de_pagamento">
+            <font>Formas de pagamento</font>
+        </p>
+        <img width="200px" src="./imagens/formas-pagamento.png" alt="Formas de pagamento">
+        <p>&copy; Recode Pro</p>
     </footer>
     
 </body>
