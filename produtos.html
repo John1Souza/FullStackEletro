@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos Full Stack Eletro</title>
-    <link rel="stylesheet" href="./css/estilo.css">    
+    <link rel="stylesheet" href="./css/estilo.css">   
+    <script src="./js/funcoes.js"></script> 
 </head>
 <body>                                  
     <nav id="menu">
@@ -23,44 +24,45 @@
     <section class="categorias">               
         <h3>Categorias</h3>
         <ul>
-            <li>Geladeiras (3)</li>
-            <li>Fogões (2)</li>
-            <li>Microondas (3)</li>
-            <li>Lavadoura de Roupas (2)</li>
-            <li>Lava Louças (2)</li>
+            <li onclick="exibir_todos()">Todos os itens</li>
+            <li onclick="exibir_categoria('geladeira')">Geladeiras (3)</li>
+            <li onclick="exibir_categoria('fogao')">Fogões (2)</li>
+            <li onclick="exibir_categoria('microondas')">Microondas (3)</li>
+            <li onclick="exibir_categoria('lavaroupas')">Lavadoura de Roupas (2)</li>
+            <li onclick="exibir_categoria('lavaloucas')">Lava Louças (2)</li>
         </ul>
     </section>
     <section class="produtos">           
-            <div class="box_produto">
-                <img src="./imagens/geladeira.jpg" width="120px" alt="">
+            <div class="box_produto" id="geladeira" style="display: block;">
+                <img src="./imagens/geladeira.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 <p class="descricao">Geladeira Fros Free Brastemp Side Inverse 540 litros</p><hr>
                 <p class="descricao"><strike>R$ 6.389,00</strike></p><br>
                 <p class="preco">R$ 5.019,00</p>
             </div>
-            <div class="box_produto">
-                <img src="./imagens/microondas.jpg" width="120px" alt="">
+            <div class="box_produto" id="microondas" style="display: block;">
+                <img src="./imagens/microondas.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 <p class="descricao">Mircroondas Brastemp</p><hr>
                 <p class="descricao"><strike>R$ 650,00</strike></p><br>
                 <p class="preco">R$ 399,99</p>
             </div>
-            <div class="box_produto">
-                <img src="./imagens/fogao.jpg" width="120px" alt="">
+            <div class="box_produto" id="fogao" style="display: block;">
+                <img src="./imagens/fogao.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 <p class="descricao">Fogão Brastemp </p><hr>
                 <p class="descricao"><strike>R$ 1.200,00</strike></p><br>
                 <p class="preco">R$ 999,99</p>
             </div>
-            <div class="box_produto">
-                <img src="./imagens/lavaroupas.jpg" width="120px" alt="">
+            <div class="box_produto" id="lavaroupas" style="display: block;">
+                <img src="./imagens/lavaroupas.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 <p class="descricao">Lava Roupas Brastemp</p><hr>
                 <p class="descricao"><strike>R$ 1.500,00</strike></p><br>
                 <p class="preco">R$ 1.199,99</p>
             </div>
-            <div class="box_produto">
-                <img src="./imagens/lavalou.jpg" width="120px" alt="">
+            <div class="box_produto" id="lavaloucas" style="display: block;">
+                <img src="./imagens/lavalou.jpg" width="120px" onclick="destaque(this)">
                 <br>
                 <p class="descriçcao">Lava Louças Brastemp</p><hr>
                 <p class="descriçcao"><strike>R$ 2.500,00</strike></p><br>
